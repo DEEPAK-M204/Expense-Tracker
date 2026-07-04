@@ -1,0 +1,103 @@
+.add-expense-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+padding:30px;
+
+margin:35px 0;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.expense-form{
+
+display:grid;
+
+grid-template-columns:2fr 1.2fr 1.3fr 1.3fr auto;
+
+gap:18px;
+
+align-items:center;
+
+}
+
+.expense-form input,
+.expense-form select{
+
+padding:15px 18px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.15);
+
+color:white;
+
+font-size:16px;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.expense-form input::placeholder{
+
+color:#ececec;
+
+}
+
+.expense-form select option{
+
+color:black;
+
+}
+
+.expense-form input:focus,
+.expense-form select:focus{
+
+box-shadow:0 0 15px #06b6d4;
+
+background:rgba(255,255,255,.22);
+
+}
+
+.expense-form button{
+
+padding:15px 22px;
+
+border-radius:14px;
+
+background:linear-gradient(135deg,#06b6d4,#4f46e5);
+
+color:white;
+
+font-weight:600;
+
+font-size:16px;
+
+transition:.3s;
+
+}
+
+.expense-form button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+@media(max-width:1000px){
+
+.expense-form{
+
+grid-template-columns:1fr;
+
+}
+
+}

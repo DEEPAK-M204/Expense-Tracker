@@ -1,0 +1,61 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#4f46e5,#7c3aed,#06b6d4);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
+min-height:100vh;
+
+color:white;
+
+overflow-x:hidden;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+button{
+
+cursor:pointer;
+
+transition:.3s;
+
+border:none;
+
+outline:none;
+
+}
+
+input,
+select{
+
+outline:none;
+
+border:none;
+
+}
